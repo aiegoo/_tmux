@@ -1,0 +1,29 @@
+pane	config	1	:	1	:*	0	:/home/nandha	1	tmux	:su - nandha
+pane	jupyter	1	:status	1	:*Z	0	:/root	0	top	:top
+pane	jupyter	1	:status	1	:*Z	1	:/root	0	bash	:
+pane	jupyter	1	:status	1	:*Z	2	:/root/repos/notebook	1	python	:/root/anaconda3/bin/python /root/anaconda3/bin/jupyter-notebook --ip 0.0.0.0 --no-browser --port=8081 --allow-root
+pane	jupyter	1	:status	1	:*Z	3	:/root	0	bash	:
+pane	jupyter	2	:editor	0	:-	0	:/root/repos/notebook	1	vim	:vim +CtrlP
+pane	jupyter	2	:editor	0	:-	1	:/root/repos/notebook	0	bash	:
+pane	jupyter	2	:editor	0	:-	2	:/root	0	bash	:
+pane	jupyter	2	:editor	0	:-	3	:/root	0	bash	:
+pane	jupyter	3	:io_things	0	:	0	:/root	1	bash	:
+pane	jupyter	3	:io_things	0	:	1	:/root	0	bash	:
+pane	jupyter	3	:io_things	0	:	2	:/root	0	bash	:
+pane	root	1	:tmux	1	:*	0	:/home/nandha	1	tmux	:su - nandha
+pane	sitevenv	1	:server	0	:	0	:/root/repos/SiteVenv	1	python	:python server.py runserver 159.65.8.38:10055
+pane	sitevenv	2	:editor	1	:*	0	:/root/repos/SiteVenv	1	vim	:vim +CtrlP
+pane	sitevenv	2	:editor	1	:*	1	:/root/repos/SiteVenv	0	bash	:
+pane	sitevenv	2	:editor	1	:*	2	:/root/repos/SiteVenv	0	bash	:
+pane	sitevenv	3	:server	0	:	0	:/root/repos/SiteVenv	1	bash	:
+pane	sitevenv	4	:logs	0	:-	0	:/root/repos/SiteVenv	1	tail	:tail -f nohup.out
+window	config	1	1	:*	6557,136x66,0,0,37
+window	jupyter	1	1	:*Z	7327,103x53,0,0[103x36,0,0,20,103x16,0,37{34x16,0,37,24,34x16,35,37,26,33x16,70,37,25}]
+window	jupyter	2	0	:-	6653,103x53,0,0{89x53,0,0,21,13x53,90,0[13x17,90,0,27,13x17,90,18,28,13x17,90,36,29]}
+window	jupyter	3	0	:	5aa2,79x23,0,0[80x11,0,0{39x11,0,0,22,40x11,40,0,30},80x12,0,12,31]
+window	root	1	1	:*	64f9,182x66,0,0,39
+window	sitevenv	1	0	:	d960,80x24,0,0,40
+window	sitevenv	2	1	:*	6170,136x64,0,0{105x64,0,0,41,30x64,106,0[30x31,106,0,44,30x32,106,32,45]}
+window	sitevenv	3	0	:	d962,80x24,0,0,42
+window	sitevenv	4	0	:-	d963,80x24,0,0,43
+state	root	

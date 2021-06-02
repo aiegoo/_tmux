@@ -1,0 +1,54 @@
+pane	config	1	:main	0	:#	0	:/root	1	bash	:
+pane	config	2	:editor	1	:*	0	:/root	0	vim	:vim /root/.vimrc
+pane	config	2	:editor	1	:*	1	:/root	0	vim	:vim /root/.bashrc
+pane	config	2	:editor	1	:*	2	:/root	1	vim	:vim /root/.tmux.conf
+pane	config	3	:remote	0	:#-	0	:/root/.config/tmuxinator	1	bash	:
+pane	config	3	:remote	0	:#-	1	:/root/repos/tmux	0	bash	:
+pane	lightup	1	:status	1	:*	0	:/home/lightup/repos/olora-pawan/sandbox	0	top	:top
+pane	lightup	1	:status	1	:*	1	:/home/lightup/repos/olora-pawan/sandbox	0	bash	:
+pane	lightup	1	:status	1	:*	2	:/home/lightup/repos/olora-pawan/sandbox	1	bash	:
+pane	lightup	1	:status	1	:*	3	:/home/lightup/repos/olora-pawan/sandbox	0	python	:python manage.py runserver 159.65.8.38:10088
+pane	lightup	2	:editor	0	:	0	:/home/lightup/repos/olora-pawan/sandbox	1	vim	:vim +CtrlP
+pane	lightup	2	:editor	0	:	1	:/home/lightup/repos/olora-pawan/sandbox	0	bash	:
+pane	lightup	2	:editor	0	:	2	:/home/lightup/repos/olora-pawan/sandbox	0	vim	:vim
+pane	lightup	3	:io_things	0	:-	0	:/home/lightup/repos/olora-pawan/sandbox	0	bash	:
+pane	lightup	3	:io_things	0	:-	1	:/home/lightup/repos/olora-pawan/sandbox	1	bash	:
+pane	lightup	3	:io_things	0	:-	2	:/home/lightup/repos/olora-pawan/sandbox	0	bash	:
+pane	lightup	3	:io_things	0	:-	3	:/home/lightup/repos/olora-pawan/sandbox	0	vim	:vim
+pane	lightup	4	:logs	0	:	0	:/home/lightup/repos/olora-pawan/sandbox	1	tail	:tail -f nohup.out
+pane	root	1	:su	1	:*	0	:/root	1	su	:su -
+pane	sitevenv	1	:server	0	:#!	0	:/root/repos/SiteVenv	1	python	:python server.py runserver 159.65.8.38:10055
+pane	sitevenv	2	:editor	1	:*	0	:/root/repos/SiteVenv	0	vim	:vim +CtrlP
+pane	sitevenv	2	:editor	1	:*	1	:/root/repos/SiteVenv	0	bash	:
+pane	sitevenv	2	:editor	1	:*	2	:/root/repos/SiteVenv	1	bash	:
+pane	sitevenv	3	:server	0	:	0	:/root/repos/SiteVenv	1	bash	:
+pane	sitevenv	4	:logs	0	:-	0	:/root/repos/SiteVenv	1	tail	:tail -f nohup.out
+pane	udemy	1	:status	0	:#	0	:/root	1	top	:top
+pane	udemy	1	:status	0	:#	1	:/root	0	bash	:
+pane	udemy	1	:status	0	:#	2	:/root	0	bash	:
+pane	udemy	1	:status	0	:#	3	:/root	0	bash	:
+pane	udemy	2	:editor	1	:*	0	:/root/repos/udemy/shellscript	1	vim	:vim +CtrlP
+pane	udemy	2	:editor	1	:*	1	:/root	0	bash	:
+pane	udemy	2	:editor	1	:*	2	:/root	0	vim	:vim
+pane	udemy	3	:io_things	0	:#-	0	:/root	1	bash	:
+pane	udemy	3	:io_things	0	:#-	1	:/root	0	bash	:
+pane	udemy	3	:io_things	0	:#-	2	:/root	0	bash	:
+pane	udemy	3	:io_things	0	:#-	3	:/root	0	vim	:vim
+pane	udemy	4	:logs	0	:#	0	:/root	1	tail	:tail -f nohup.out
+window	config	1	0	:#	5963,80x24,0,0,52
+window	config	2	1	:*	a379,211x52,0,0{143x52,0,0,53,67x52,144,0[67x25,144,0,55,67x26,144,26,56]}
+window	config	3	0	:#-	eb5f,80x24,0,0{77x24,0,0,54,2x24,78,0,57}
+window	lightup	1	1	:*	4cc0,210x54,0,0[210x36,0,0,1,210x17,0,37{69x17,0,37,5,70x17,70,37,6,69x17,141,37,7}]
+window	lightup	2	0	:	70a4,211x52,0,0{143x52,0,0,2,67x52,144,0[67x25,144,0,8,67x26,144,26,9]}
+window	lightup	3	0	:-	77fa,209x53,0,0[210x26,0,0{104x26,0,0,3,105x26,105,0,10},210x27,0,27{104x27,0,27,11,105x27,105,27,12}]
+window	lightup	4	0	:	b261,80x24,0,0,4
+window	root	1	1	:*	e85d,80x3,0,0,0
+window	sitevenv	1	0	:#!	5962,80x24,0,0,13
+window	sitevenv	2	1	:*	a371,211x52,0,0{143x52,0,0,14,67x52,144,0[67x25,144,0,17,67x26,144,26,18]}
+window	sitevenv	3	0	:	5964,80x24,0,0,15
+window	sitevenv	4	0	:-	5965,80x24,0,0,16
+window	udemy	1	0	:#	59f8,80x24,0,0[80x21,0,0,58,80x2,0,22{26x2,0,22,62,26x2,27,22,63,26x2,54,22,64}]
+window	udemy	2	1	:*	8b05,80x20,0,0{77x20,0,0,59,2x20,78,0[2x9,78,0,65,2x10,78,10,66]}
+window	udemy	3	0	:#-	b406,79x23,0,0[80x11,0,0{39x11,0,0,60,40x11,40,0,67},80x12,0,12{39x12,0,12,68,40x12,40,12,69}]
+window	udemy	4	0	:#	d962,80x24,0,0,61
+state	root	
